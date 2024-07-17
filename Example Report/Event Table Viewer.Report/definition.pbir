@@ -1,0 +1,9 @@
+{
+  "version": "4.0",
+  "datasetReference": {
+    "byPath": {
+      "path": "../Event Table Viewer.SemanticModel"
+    },
+    "byConnection": null
+  }
+}

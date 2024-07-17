@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "SemanticModel",
+    "displayName": "Event Table Viewer"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "a6ab5860-490c-4f40-952f-d983286cd387"
+  }
+}

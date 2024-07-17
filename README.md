@@ -3,7 +3,7 @@
 Custom Visual for Power BI displaying event data in an extended version of [LineUp.js](https://lineup.js.org/).
 The extended version including the event column is avaiable [here](https://github.com/jzethofer/lineupjs/tree/build) as a fork of [LineUp](https://github.com/lineupjs/lineupjs).
 
-![Event Table Viewer](./publication/final/Screenshot1.png)
+![Event Table Viewer](./publication/upload//Screenshot1.png)
 
 ## Key Features
 

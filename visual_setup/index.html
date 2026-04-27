@@ -1,0 +1,955 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../user_guide/">
+      
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.17">
+    
+    
+      
+        <title>Visual Setup - Event Table Viewer</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.bcfcd587.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="purple">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#visual-setup" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Event Table Viewer" class="md-header__button md-logo" aria-label="Event Table Viewer" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Event Table Viewer
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Visual Setup
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="purple"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6zm0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4zM7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="teal" data-md-color-accent="lime"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3Z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
+        
+  
+    
+  
+  Event Table Viewer Power BI Visual
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../privacy_policy/" class="md-tabs__link">
+        
+  
+    
+  
+  Privacy Policy
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../support/" class="md-tabs__link">
+        
+  
+    
+  
+  Support
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../user_guide/" class="md-tabs__link">
+        
+  
+    
+  
+  User Guide
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+  
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="./" class="md-tabs__link">
+        
+  
+    
+  
+  Visual Setup
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Event Table Viewer" class="md-nav__button md-logo" aria-label="Event Table Viewer" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    Event Table Viewer
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Event Table Viewer Power BI Visual
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../privacy_policy/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Privacy Policy
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../support/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Support
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../user_guide/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    User Guide
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Visual Setup
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Visual Setup
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#data-input-fields" class="md-nav__link">
+    <span class="md-ellipsis">
+      Data Input Fields
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Data Input Fields">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#data-columns" class="md-nav__link">
+    <span class="md-ellipsis">
+      Data Columns
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#event-data" class="md-nav__link">
+    <span class="md-ellipsis">
+      Event Data
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#similar-data-ids" class="md-nav__link">
+    <span class="md-ellipsis">
+      Similar Data IDs
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#similar-data-duration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Similar Data Duration
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#id" class="md-nav__link">
+    <span class="md-ellipsis">
+      ID
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#power-bi-settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      Power BI Settings
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Power BI Settings">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#data-reduction-settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      Data Reduction Settings
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#event-settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      Event Settings
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Event Settings">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#event-unit" class="md-nav__link">
+    <span class="md-ellipsis">
+      Event unit
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#milliseconds-per-scale-unit" class="md-nav__link">
+    <span class="md-ellipsis">
+      Milliseconds per Scale Unit
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#boxplot-unit" class="md-nav__link">
+    <span class="md-ellipsis">
+      Boxplot Unit
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#milliseconds-per-boxplot-unit" class="md-nav__link">
+    <span class="md-ellipsis">
+      Milliseconds per Boxplot Unit
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#event-scale-min" class="md-nav__link">
+    <span class="md-ellipsis">
+      Event Scale Min
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#event-scale-max" class="md-nav__link">
+    <span class="md-ellipsis">
+      Event Scale Max
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#heatmap-bin-count" class="md-nav__link">
+    <span class="md-ellipsis">
+      Heatmap Bin Count
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#filter-settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      Filter Settings
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Filter Settings">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#filter-similar-default" class="md-nav__link">
+    <span class="md-ellipsis">
+      Filter Similar Default
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#similar-id-table" class="md-nav__link">
+    <span class="md-ellipsis">
+      Similar ID Table
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#similar-id-column" class="md-nav__link">
+    <span class="md-ellipsis">
+      Similar ID Column
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#general-settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      General Settings
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="General Settings">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#aggregation-strategy" class="md-nav__link">
+    <span class="md-ellipsis">
+      Aggregation strategy
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#custom-mapping" class="md-nav__link">
+    <span class="md-ellipsis">
+      Custom mapping
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#zooming-settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      Zooming settings
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#saving-the-visual-state" class="md-nav__link">
+    <span class="md-ellipsis">
+      Saving the visual state
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="visual-setup">Visual Setup</h1>
+<p>This document describes how to set up the Event Table Viewer visual in Power BI.</p>
+<h2 id="data-input-fields">Data Input Fields</h2>
+<p>The Event Table Viewer visual consists of five different data input fields. It is mandatory to provide data for at least one of the fields <code>Data Columns</code> and <code>Event Data</code>.</p>
+<p><img alt="Data Input Fields" src="../files/visual_setup/data%20fields.png" /></p>
+<h3 id="data-columns">Data Columns</h3>
+<p>This field supports the following data types:</p>
+<ul>
+<li>String</li>
+<li>Number</li>
+<li>Date/Time</li>
+<li>Boolean</li>
+</ul>
+<p>All fields are displayed as column of the corresponding type in the table and have different visual representations and filter options depending on the type. For example the table can be grouped by individual string values, but number values have to be binned for grouping.</p>
+<h3 id="event-data">Event Data</h3>
+<p>Data fields added here must be of type <code>Date/Time</code>. Hierarchical dates are not supported. Each data field added will be displayed as one event type with a unique color in the event column.</p>
+<h3 id="similar-data-ids">Similar Data IDs</h3>
+<p>The input field <code>Similar Data IDs</code> is used to filter data from different tables that can be unrelated to the current data. When multiple IDs are provided they must be separated by <code>;</code> in order to be recognized by the visual. The table to be filtered can be specified in the visual settings.</p>
+<h3 id="similar-data-duration">Similar Data Duration</h3>
+<p>This field is used to specify the boxplot values for each rows as offset from the event. The unit of the duration can be specified in the visual settings. Values are separated by <code>;</code>.</p>
+<div class="language-text highlight"><span class="filename">Example</span><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>15;20;14;14;10;10;13;11;9;5;8;13;2;9;6;7;3;5;3;6;15;16;14;5;10;16;23;10;4;11;17;6;8;14
+</span></code></pre></div>
+<h3 id="id">ID</h3>
+<p>The data provided here must be a unique ID and is used to save selected data rows between Power BI reloads.</p>
+<h2 id="power-bi-settings">Power BI Settings</h2>
+<h3 id="data-reduction-settings">Data Reduction Settings</h3>
+<p>Setting the <code>Row Count</code> in data reduction settings will change the number of data rows loaded in one batch when the data is updated. This can be used to optimize the performance of the visual.</p>
+<p><img alt="Data Reduction Settings" src="../files/visual_setup/data%20reduction%20settings.png" /></p>
+<h3 id="event-settings">Event Settings</h3>
+<p>The event settings contain everything that is relevant to the event column.</p>
+<p><img alt="Event Settings" src="../files/visual_setup/event%20settings.png" /></p>
+<h4 id="event-unit">Event unit</h4>
+<p>Time unit for the event scale. It is displayed in brackets next to the event column name.</p>
+<p>Possible values:</p>
+<table>
+<thead>
+<tr>
+<th>Unit</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ms</td>
+<td>milliseconds</td>
+</tr>
+<tr>
+<td>s</td>
+<td>seconds</td>
+</tr>
+<tr>
+<td>min</td>
+<td>minutes</td>
+</tr>
+<tr>
+<td>h</td>
+<td>hours</td>
+</tr>
+<tr>
+<td>D</td>
+<td>days</td>
+</tr>
+<tr>
+<td>W</td>
+<td>weeks</td>
+</tr>
+<tr>
+<td>M</td>
+<td>months</td>
+</tr>
+<tr>
+<td>Y</td>
+<td>years</td>
+</tr>
+<tr>
+<td>custom</td>
+<td>custom unit defined under <code>Milliseconds per Scale Unit</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="milliseconds-per-scale-unit">Milliseconds per Scale Unit</h4>
+<p>Custom unit for the event scale. Only used when <code>Event unit</code> is set to <code>custom</code>.</p>
+<h4 id="boxplot-unit">Boxplot Unit</h4>
+<p>Specifies the time unit of the data provided in the <code>Similar Data Duration</code> field.
+Possible values are the same as for the <code>Event unit</code>.</p>
+<h4 id="milliseconds-per-boxplot-unit">Milliseconds per Boxplot Unit</h4>
+<p>Custom unit for the boxplot scale. Only used when <code>Boxplot Unit</code> is set to <code>custom</code>.</p>
+<h4 id="event-scale-min">Event Scale Min</h4>
+<p>Minimum value of the event scale. Only used when the data exceeds that range. Otherwise, the minimum value of the data is used.
+Unit is the same as for the <code>Event unit</code>.
+Default value is <code>-100</code>.</p>
+<h4 id="event-scale-max">Event Scale Max</h4>
+<p>Maximum value of the event scale. Only used when the data exceeds that range. Otherwise, the maximum value of the data is used.
+Unit is the same as for the <code>Event unit</code>.
+Default value is <code>365</code>.</p>
+<h4 id="heatmap-bin-count">Heatmap Bin Count</h4>
+<p>Number of bins for the heatmap in the event overview.
+Default value is <code>50</code>.</p>
+<h3 id="filter-settings">Filter Settings</h3>
+<p>The filter settings are used when the checkbox <code>Filter Similar</code> is checked in the visual footer. <code>Similar Data IDs</code> must be provided in the data input fields. When active, the visual will filter the data based on the provided IDs and the table and column specified in the filter settings.</p>
+<p><img alt="Filter Settings" src="../files/visual_setup/filter%20settings.png" /></p>
+<h4 id="filter-similar-default">Filter Similar Default</h4>
+<p>Default value for the <code>Filter Similar</code> checkbox.</p>
+<h4 id="similar-id-table">Similar ID Table</h4>
+<p>Table name to be filtered when the <code>Filter Similar</code> checkbox is checked.</p>
+<h4 id="similar-id-column">Similar ID Column</h4>
+<p>Column name to be filtered when the <code>Filter Similar</code> checkbox is checked.</p>
+<h3 id="general-settings">General Settings</h3>
+<p>The general settings contain the table aggregation strategy and custom numerical mappings.</p>
+<p><img alt="General Settings" src="../files/visual_setup/general%20settings.png" /></p>
+<h4 id="aggregation-strategy">Aggregation strategy</h4>
+<p>The aggregation strategy defines how the table is displayed on grouping.</p>
+<p>Group means a group summary visualization like a boxplot or histogram. Items are the individual table rows. Top are the top N items of one group. N can be set by clicking on the 3 dots in the aggregation column (left most column).</p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>group</td>
+<td>shows group summary only</td>
+</tr>
+<tr>
+<td>item</td>
+<td>shows items only</td>
+</tr>
+<tr>
+<td>groupItem</td>
+<td>shows group summary and items</td>
+</tr>
+<tr>
+<td>groupTopItem</td>
+<td>shows group and top N items, items can be expanded</td>
+</tr>
+<tr>
+<td>groupItemTop</td>
+<td>shows group and all items, items can be collapsed</td>
+</tr>
+</tbody>
+</table>
+<h4 id="custom-mapping">Custom mapping</h4>
+<p>This setting is used to specify a custom numeric column range mapping. The default is to use the minimum and maximum values of each column as range.
+The custom mapping is specified in JSON format: <code>{"ColumnName":[min,max]}</code></p>
+<h4 id="zooming-settings">Zooming settings</h4>
+<p>Adapts the visual zoom such that the columns fit the available space.</p>
+<p><img alt="Zooming Settings" src="../files/visual_setup/zooming%20settings.png" /></p>
+<p>Zooming can be disabled. The default values are <code>true</code> for enabling zooming, <code>0.5</code> for <code>Min Zooming Scale</code> and <code>1</code> for <code>Max Zooming Scale</code>.</p>
+<h2 id="saving-the-visual-state">Saving the visual state</h2>
+<p>When changing the visual appearence through the table itsself, this is not saved between Power BI reloads. To save the current state of the visual, the <code>Save Settings</code> button at the bottom right of the visual can be used. This is only possible when the Power BI report is in edit mode.</p>
+<p>Examples for saved settings are:</p>
+<ul>
+<li>Column order</li>
+<li>Column width</li>
+<li>Filters</li>
+<li>Color mappings</li>
+<li>Grouping</li>
+<li>Sorting</li>
+</ul>
+<p>To reset the visual to the default state, the <code>Reset Settings</code> button can be used.</p>
+<p>More information about the visual can be found in the <a href="../user_guide/">User Guide</a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var tab,labels=set.querySelector(".tabbed-labels");for(tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.tabs", "navigation.sections", "toc.integrate", "navigation.top", "search.suggest", "search.highlight", "content.tabs.link", "content.code.annotate", "content.code.copy"], "search": "../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.1e8ae164.min.js"></script>
+      
+    
+  </body>
+</html>
